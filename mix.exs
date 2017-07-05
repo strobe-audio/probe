@@ -18,7 +18,7 @@ defmodule Probe.Mixfile do
      description: description(),
      package: package(),
      name: "Probe",
-     docs: [source_ref: "v#{@version}, "main: "Probe"],
+     docs: [source_ref: "v#{@version}", main: "Probe"],
     ]
   end
 
