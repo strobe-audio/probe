@@ -114,7 +114,7 @@ defmodule Probe do
   end
 
   defp quoted_debug(expression, label, style) do
-    opts = Application.get_env(:probe, :inspect, [])
+    opts = Application.get_env(:probe, :inspect, [pretty: true])
     tag = IO.ANSI.format_fragment([
       style, " ", label_string(expression, label), " ", :reset, " "
     ]) |> IO.iodata_to_binary
